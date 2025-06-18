@@ -1,107 +1,25 @@
+
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Your Name - Portfolio</title>
-    <script src="https://cdn.tailwindcss.com"></script>
-    <script src="https://cdn.jsdelivr.net/npm/react@18.2.0/umd/react.development.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/react-dom@18.2.0/umd/react-dom.development.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/babel-standalone@6.26.0/babel.min.js"></script>
-</head>
-<body class="bg-gray-100 text-gray-800">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CS Portfolio - Computer Science Student</title>
+    <meta name="description" content="Portfolio of a Computer Science student specializing in Machine Learning and Software Development" />
+    <meta name="author" content="CS Student" />
+
+    <meta property="og:title" content="CS Portfolio - Computer Science Student" />
+    <meta property="og:description" content="Portfolio showcasing projects in Machine Learning and Software Development" />
+    <meta property="og:type" content="website" />
+    <meta property="og:image" content="https://lovable.dev/opengraph-image-p98pqg.png" />
+
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:site" content="@lovable_dev" />
+    <meta name="twitter:image" content="https://lovable.dev/opengraph-image-p98pqg.png" />
+  </head>
+
+  <body>
     <div id="root"></div>
-    <script type="text/babel">
-        function NavBar() {
-            return (
-                <nav className="bg-blue-600 text-white p-4 sticky top-0 shadow-md">
-                    <div className="container mx-auto flex justify-between items-center">
-                        <h1 className="text-2xl font-bold">Your Name</h1>
-                        <ul className="flex space-x-6">
-                            <li><a href="#about" className="hover:text-blue-200">About</a></li>
-                            <li><a href="#projects" className="hover:text-blue-200">Projects</a></li>
-                            <li><a href="#contact" className="hover:text-blue-200">Contact</a></li>
-                        </ul>
-                    </div>
-                </nav>
-            );
-        }
-
-        function Hero() {
-            return (
-                <section id="home" className="bg-blue-100 py-20 text-center">
-                    <div className="container mx-auto">
-                        <h2 className="text-4xl font-bold mb-4">Welcome to My Portfolio</h2>
-                        <p className="text-lg mb-6">I'm Gurmant Singh, a passionate developer.</p>
-                        <a href="#contact" className="bg-blue-600 text-white px-6 py-2 rounded hover:bg-blue-700">Get in Touch</a>
-                    </div>
-                </section>
-            );
-        }
-
-        function About() {
-            return (
-                <section id="about" className="py-20">
-                    <div className="container mx-auto px-4">
-                        <h2 className="text-3xl font-bold mb-6 text-center">About Me</h2>
-                        <p className="text-lg">
-                            Hi, I'm Your Name! I'm a developer with expertise in web development. I love creating
-                            user-friendly and visually appealing applications. My skills include React, Tailwind CSS, and more.
-                        </p>
-                    </div>
-                </section>
-            );
-        }
-
-        function Projects() {
-            return (
-                <section id="projects" className="bg-gray-200 py-20">
-                    <div className="container mx-auto px-4">
-                        <h2 className="text-3xl font-bold mb-6 text-center">My Projects</h2>
-                        <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-                            <div className="bg-white p-6 rounded shadow">
-                                <h3 className="text-xl font-semibold mb-2">Project 1</h3>
-                                <p>A web application built with React and Node.js. [Describe your project here]</p>
-                            </div>
-                            <div className="bg-white p-6 rounded shadow">
-                                <h3 className="text-xl font-semibold mb-2">Project 2</h3>
-                                <p>A responsive website using Tailwind CSS. [Describe your project here]</p>
-                            </div>
-                        </div>
-                    </div>
-                </section>
-            );
-        }
-
-        function Contact() {
-            return (
-                <section id="contact" className="py-20">
-                    <div className="container mx-auto px-4 text-center">
-                        <h2 className="text-3xl font-bold mb-6">Contact Me</h2>
-                        <p className="text-lg mb-4">Feel free to reach out via email or social media!</p>
-                        <p className="mb-4">Email: your.email@example.com</p>
-                        <div className="flex justify-center space-x-4">
-                            <a href="https://github.com/yourusername" className="text-blue-600 hover:text-blue-800">GitHub</a>
-                            <a href="https://linkedin.com/in/yourusername" className="text-blue-600 hover:text-blue-800">LinkedIn</a>
-                        </div>
-                    </div>
-                </section>
-            );
-        }
-
-        function App() {
-            return (
-                <div className="smooth-scroll">
-                    <NavBar />
-                    <Hero />
-                    <About />
-                    <Projects />
-                    <Contact />
-                </div>
-            );
-        }
-
-        ReactDOM.render(<App />, document.getElementById('root'));
-    </script>
-</body>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
 </html>
